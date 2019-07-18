@@ -736,7 +736,7 @@
 		/* Cache the data get and set functions for speed */
 		var mDataSrc = oCol.mData;
 		var mData = _fnGetObjectDataFn( mDataSrc );
-		var mRender = oCol.mRender ? _fnGetObjectDataFn( oCol.mRender ) : null;
+		var mRender = oCol.mRender ? _fnGetObjectDataFn( oCol.mRender ) : $.fn.dataTable.render.text().display;
 	
 		var attrTest = function( src ) {
 			return typeof src === 'string' && src.indexOf('@') !== -1;
